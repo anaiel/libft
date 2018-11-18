@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2018/11/17 12:05:22 by anaiel           ###   ########.fr       */
+/*   Updated: 2018/11/18 15:38:25 by anaiel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,5 +84,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_strsplitlst(char *s, char c);
 void				ft_putstrarray(const char **str);
 void				ft_putstrlst(t_list *lst);
+void				ft_putfile(int fd);
+int					ft_filelinecount(int fd);
 
 #endif
