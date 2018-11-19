@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 17:33:51 by anleclab          #+#    #+#             */
-/*   Updated: 2018/11/16 15:38:50 by anleclab         ###   ########.fr       */
+/*   Updated: 2018/11/19 10:00:53 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list	*ft_strsplitlst(char *s, char c)
 	int		i;
 	size_t	len;
 
-	res = ft_lstnew(NULL, 0);
+	res = NULL;
 	if (!s)
 		return (res);
 	i = 0;
