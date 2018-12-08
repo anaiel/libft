@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <wchar.h>
 
 typedef struct		s_list
 {
@@ -86,5 +87,7 @@ void				ft_putstrarray(const char **str);
 void				ft_putstrlst(t_list *lst);
 void				ft_putfile(int fd);
 int					ft_filelinecount(int fd);
+void				ft_printbits(char c);
+int					ft_putwchar(wchar_t c);
 
 #endif

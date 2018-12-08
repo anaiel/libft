@@ -23,7 +23,7 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c \
 	  ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_lstnew.c \
 	  ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
 	  ft_strsplitlst.c ft_putstrarray.c ft_putstrlst.c ft_putfile.c \
-	  ft_filelinecount.c
+	  ft_filelinecount.c ft_putwchar.c ft_printbits.c
 OBJ = $(SRC:.c=.o)
 
 .PHONY: all, clean, fclean, re
