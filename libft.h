@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2018/11/18 15:38:25 by anaiel           ###   ########.fr       */
+/*   Updated: 2018/12/19 15:40:11 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,7 @@ void				ft_putfile(int fd);
 int					ft_filelinecount(int fd);
 void				ft_printbits(char c);
 int					ft_putwchar(wchar_t c);
+unsigned char		*ft_wchar_to_bytes(wint_t c);
+double				ft_double_power(double n, int pow);
 
 #endif
