@@ -9,7 +9,7 @@ Run the command `make` to create the **libft.a** library file.
 
 ## Available functions
 
-# Character recon and treatment
+### Character recon and treatment
 - ft_isalpha
 - ft_isdigit
 - ft_isalnum
@@ -18,7 +18,7 @@ Run the command `make` to create the **libft.a** library file.
 - ft_toupper
 - ft_tolower
 
-# String manipulations
+### String manipulations
 - ft_strlen
 - ft_strnew
 - ft_strdel
@@ -43,7 +43,7 @@ Run the command `make` to create the **libft.a** library file.
 - ft_strtrim
 - ft_strsplit
 
-# Memory manipulation
+### Memory manipulation
 - ft_memset
 - ft_bzero
 - ft_memcpy
@@ -54,7 +54,7 @@ Run the command `make` to create the **libft.a** library file.
 - ft_memalloc
 - ft_memdel
 
-# Chained lists manipulation
+### Chained lists manipulation
 - ft_lstnew
 - ft_lstdelone
 - ft_lstdel
@@ -63,11 +63,11 @@ Run the command `make` to create the **libft.a** library file.
 - ft_lstmap
 - ft_strsplitlst
 
-# Conversions
+### Conversions
 - ft_atoi
 - ft_itoa
 
-# Printing
+### Printing
 - ft_putchar
 - ft_putchar_fd
 - ft_putstr
@@ -81,7 +81,7 @@ Run the command `make` to create the **libft.a** library file.
 - ft_printbits
 - ft_putwchar
 
-# Misc
+### Misc
 - ft_filelinecount
 - ft_double_power
 - ft_wchar_to_bytes
