@@ -7,9 +7,88 @@ The detailed instructions can be found [here](https://github.com/Gabriel-Em/42_A
 
 Run the command `make` to create the **libft.a** library file.
 
+## Available functions
+
+# Character recon and treatment
+- ft_isalpha
+- ft_isdigit
+- ft_isalnum
+- ft_isascii
+- ft_isprint
+- ft_toupper
+- ft_tolower
+
+# String manipulations
+- ft_strlen
+- ft_strnew
+- ft_strdel
+- ft_strclr
+- ft_striter
+- ft_striteri
+- ft_strcmp
+- ft_strncmp
+- ft_strequ
+- ft_strnequ
+- ft_strdup
+- ft_strcpy
+- ft_strncpy
+- ft_strcat
+- ft_strncat
+- ft_strlcat
+- ft_strchr
+- ft_strstr
+- ft_strnstr
+- ft_strsub
+- ft_strjoin
+- ft_strtrim
+- ft_strsplit
+
+# Memory manipulation
+- ft_memset
+- ft_bzero
+- ft_memcpy
+- ft_memccpy
+- ft_memmove
+- ft_memchr
+- ft_memcmp
+- ft_memalloc
+- ft_memdel
+
+# Chained lists manipulation
+- ft_lstnew
+- ft_lstdelone
+- ft_lstdel
+- ft_lstadd
+- ft_lstiter
+- ft_lstmap
+- ft_strsplitlst
+
+# Conversions
+- ft_atoi
+- ft_itoa
+
+# Printing
+- ft_putchar
+- ft_putchar_fd
+- ft_putstr
+- ft_putstr_fd
+- ft_putendl
+- ft_putendl_fd
+- ft_putnbr
+- ft_putnbr_fd
+- ft_strputstrarray
+- ft_putfile
+- ft_printbits
+- ft_putwchar
+
+# Misc
+- ft_filelinecount
+- ft_double_power
+- ft_wchar_to_bytes
+
 ## Updating
 
-The project is updated regularly with new functions that could be useful for other projects.
+The project is updated regularly with new functions that could be useful for other projects, or when I learn something new, or when I realize my code looks aweful :wink:
 
 ## Authors
 
