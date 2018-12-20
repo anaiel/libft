@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2018/12/19 16:06:54 by anleclab         ###   ########.fr        #
+#    Updated: 2018/12/20 09:36:35 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,18 +31,19 @@ OBJ = $(SRC:.c=.o)
 .PHONY: all, clean, fclean, re
 
 all: $(NAME)
+	@echo "\033[0;32mlibft.a library created successfully"
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
 
 %.o: $(SRC_DIR)/%.c
-	gcc -Wall -Werror -Wextra -I. -c $<
+	@gcc -Wall -Werror -Wextra -I. -c $<
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
