@@ -67,6 +67,8 @@ Run the command `make` to create the **libft.a** library file.
 - ft_atoi
 - ft_itoa
 - ft_itoa_base
+- ft_litoa
+- ft_llitoa
 
 ### Printing
 - ft_putchar

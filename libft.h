@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/02 11:57:30 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/02 12:13:58 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,5 +93,7 @@ unsigned char		*ft_wchar_to_bytes(wint_t c);
 double				ft_double_power(double n, int pow);
 void				ft_array_swap(int *array, int i1, int i2);
 char				*ft_itoa_base(int n, int base);
+char				*ft_litoa(long int nb);
+char				*ft_llitoa(long long int nb);
 
 #endif
