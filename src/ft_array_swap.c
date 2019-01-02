@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/02 10:35:50 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/02 10:37:31 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/02 11:13:24 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ void	ft_array_swap(int *array, int i1, int i2)
 {
 	int		tmp;
 
-	tmp = cache[i1];
-	cache[i1] = cache[i2];
-	cache[i2] = tmp;
+	tmp = array[i1];
+	array[i1] = array[i2];
+	array[i2] = tmp;
 }
