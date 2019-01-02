@@ -87,6 +87,7 @@ Run the command `make` to create the **libft.a** library file.
 ### Misc
 - ft_filelinecount
 - ft_double_power
+- ft_ldouble_power
 - ft_wchar_to_bytes
 - ft_array_swap
 
