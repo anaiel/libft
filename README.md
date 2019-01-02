@@ -66,6 +66,7 @@ Run the command `make` to create the **libft.a** library file.
 ### Conversions
 - ft_atoi
 - ft_itoa
+- ft_itoa_base
 
 ### Printing
 - ft_putchar
@@ -85,6 +86,7 @@ Run the command `make` to create the **libft.a** library file.
 - ft_filelinecount
 - ft_double_power
 - ft_wchar_to_bytes
+- ft_array_swap
 
 ## Updating
 
