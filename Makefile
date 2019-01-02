@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2018/12/20 09:36:35 by anleclab         ###   ########.fr        #
+#    Updated: 2019/01/02 10:38:38 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c \
 	  ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c \
 	  ft_strsplitlst.c ft_putstrarray.c ft_putstrlst.c ft_putfile.c \
 	  ft_filelinecount.c ft_putwchar.c ft_printbits.c ft_wchar_to_bytes.c \
-	  ft_double_power.c
+	  ft_double_power.c ft_array_swap.c
 OBJ = $(SRC:.c=.o)
 
 .PHONY: all, clean, fclean, re
