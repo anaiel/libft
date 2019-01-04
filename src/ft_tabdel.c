@@ -6,13 +6,13 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/04 11:17:44 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/04 15:04:53 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/04 15:12:30 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	ft_tabdel(void **tab)
+void	ft_tabdel(char **tab)
 {
 	int		i;
 
