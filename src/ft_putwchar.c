@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:12:01 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:12:07 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/15 14:42:13 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	ft_putwchar_4bytes(wchar_t c)
 	write(1, &byte, 1);
 }
 
-static void ft_putwchar_3bytes(wchar_t c)
+static void	ft_putwchar_3bytes(wchar_t c)
 {
 	unsigned char	byte;
 

@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 11:31:43 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:15:20 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/15 14:41:41 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static unsigned char	*ft_wchar_to_2bytes(wint_t c)
 	return (res);
 }
 
-unsigned char	*ft_wchar_to_bytes(wint_t c)
+unsigned char			*ft_wchar_to_bytes(wint_t c)
 {
 	unsigned char	*res;
 

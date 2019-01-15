@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/02 11:39:22 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/02 11:55:06 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/15 14:42:41 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static char	*init_base(int base)
 static int	nb_digits(unsigned int nb, int base)
 {
 	int		nbdigits;
-	
+
 	nbdigits = 0;
 	if (nb == 0)
 		return (1);
