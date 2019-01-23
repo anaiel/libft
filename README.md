@@ -91,6 +91,9 @@ Run the command `make` to create the **libft.a** library file.
 - ft_wchar_to_bytes
 - ft_array_swap
 - ft_tabdel
+- ft_fopen
+- ft_fclose
+- ft_fgetc
 
 ## Updating
 

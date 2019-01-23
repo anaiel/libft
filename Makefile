@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2019/01/23 14:30:13 by anleclab         ###   ########.fr        #
+#    Updated: 2019/01/23 15:33:06 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,7 +86,10 @@ SRC_NAMES = ft_memset.c \
 	  ft_litoa.c \
 	  ft_llitoa.c \
 	  ft_ldouble_power.c \
-	  ft_tabdel.c
+	  ft_tabdel.c \
+	  ft_fopen.c \
+	  ft_fclose.c \
+	  ft_fgetc.c
 SRC = $(addprefix $(SRC_DIR)/, $(SRC_NAMES))
 OBJ_DIR = obj
 OBJ_NAMES = $(SRC_NAMES:.c=.o)

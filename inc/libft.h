@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:30:04 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 15:38:18 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <wchar.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
+
+# define BUFF_SIZE 4096
 
 typedef struct		s_list
 {
@@ -24,6 +27,13 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_file
+{
+	int				fd;
+	char			buf[BUFF_SIZE + 1];
+	int				i;
+}					t_file;
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -99,5 +109,8 @@ char				*ft_litoa(long int nb);
 char				*ft_llitoa(long long int nb);
 long double			ft_ldouble_power(long double n, int pow);
 void				ft_tabdel(char **tab);
+t_file				*ft_fopen(const char *path);
+int					ft_fclose(t_file *stream);
+int					ft_fgetc(t_file *stream);
 
 #endif
