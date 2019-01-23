@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 19:29:30 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:09:31 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:10:31 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

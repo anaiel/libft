@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 17:11:28 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:08:23 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:09:35 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {

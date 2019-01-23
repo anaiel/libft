@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:12:01 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/15 14:42:13 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:12:54 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <wchar.h>
-#include <unistd.h>
+#include "libft.h"
 
 static void	ft_putwchar_4bytes(wchar_t c)
 {

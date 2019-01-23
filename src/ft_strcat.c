@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:12:39 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:12:21 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:13:00 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strcat(char *s1, const char *s2)
 {

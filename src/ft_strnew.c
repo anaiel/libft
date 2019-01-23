@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:22:53 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:14:18 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:14:38 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {

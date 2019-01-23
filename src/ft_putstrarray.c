@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 09:20:49 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:11:51 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:12:21 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_putstrarray(const char **str)
 {

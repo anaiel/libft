@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 16:06:46 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:11:41 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:12:14 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "../libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char const *s, int fd)
 {

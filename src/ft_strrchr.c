@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:11:45 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:14:30 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:14:49 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

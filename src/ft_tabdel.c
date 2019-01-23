@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/04 11:17:44 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/04 15:12:30 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:15:34 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_tabdel(char **tab)
 {

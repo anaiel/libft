@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 09:06:03 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:14:37 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:14:57 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
 static int	al_nbwords(char const *s, char c)
 {

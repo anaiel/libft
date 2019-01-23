@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 17:57:19 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:08:49 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:09:56 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
 static t_list	*al_lstadd(t_list *elem, t_list *lst)
 {

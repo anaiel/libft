@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 17:33:51 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:14:43 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:16:40 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <stdlib.h>
+#include "libft.h"
 
 t_list	*ft_strsplitlst(char *s, char c)
 {

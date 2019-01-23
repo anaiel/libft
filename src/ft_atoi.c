@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 13:51:13 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:07:17 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:08:43 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 static int	al_isspace(const char c)
 {

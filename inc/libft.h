@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/04 15:12:48 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:30:04 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <string.h>
 # include <wchar.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {

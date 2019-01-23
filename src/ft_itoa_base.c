@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/02 11:39:22 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/15 14:42:41 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:09:16 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "../libft.h"
+#include "libft.h"
 
 static char	*init_base(int base)
 {

@@ -6,12 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 15:31:10 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:11:21 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:11:55 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putnbr(int n)
 {

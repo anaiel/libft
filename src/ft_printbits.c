@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:10:12 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:10:22 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:11:07 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_printbits(char c)
 {

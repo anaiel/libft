@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:27:58 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:12:36 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:13:22 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {

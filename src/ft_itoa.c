@@ -6,11 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 14:22:39 by anleclab          #+#    #+#             */
-/*   Updated: 2018/12/19 16:08:05 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:08:56 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 static int	al_nbdigit(int n)
 {

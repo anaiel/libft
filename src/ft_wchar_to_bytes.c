@@ -6,13 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 11:31:43 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/15 14:41:41 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/01/23 14:16:02 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <wchar.h>
-#include <unistd.h>
-#include "../libft.h"
+#include "libft.h"
 
 static unsigned char	*ft_wchar_to_4bytes(wint_t c)
 {
