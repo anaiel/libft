@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_lstcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/12 17:11:28 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:49:22 by anleclab         ###   ########.fr       */
+/*   Created: 2019/04/03 21:59:10 by anleclab          #+#    #+#             */
+/*   Updated: 2019/04/03 22:09:01 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Deletes the chained list.
+** Returns a pointer to the first link of the copy of the given chained list.
 */
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+t_list	*ft_lstcpy(t_list *lst)
 {
-	t_list	*cache;
+	t_list	*cpy;
+	t_list	*new_link;
 
-	if (!*alst)
-		return ;
-	while ((*alst)->next)
+	if (!lst)
+		return (NULL);
+	cpy = NULL;
+	while (lst)
 	{
-		cache = (*alst)->next;
-		ft_lstdelone(alst, del);
-		*alst = cache;
+		if (!(new_link = ft_lstnew(lst->content, lst->content_size)))
+			return (cpy);
+		ft_lstappend(&cpy, new_link);
+		lst = lst->next;
 	}
-	ft_lstdelone(alst, del);
+	return (cpy);
 }

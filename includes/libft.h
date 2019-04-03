@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 20:25:37 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 22:13:21 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 # include <fcntl.h>
 
 # define BUFF_SIZE 4096
+
+# define LLONG_MAX 9223372036854775807
+# define INT_MIN -2147483647
 
 typedef struct		s_list
 {
@@ -37,6 +40,7 @@ typedef struct		s_file
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
+int					ft_iswhitespace(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
@@ -94,6 +98,8 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list				*ft_lstcpy(t_list *lst);
+t_list				*ft_lstappend(t_list **lst, t_list *link);
 t_list				*ft_strsplitlst(char *s, char c);
 void				ft_putstrarray(const char **str);
 void				ft_putstrlst(t_list *lst);
@@ -105,12 +111,10 @@ unsigned char		*ft_wchar_to_bytes(wint_t c);
 double				ft_double_power(double n, int pow);
 void				ft_array_swap(int *array, int i1, int i2);
 char				*ft_itoa_base(int n, int base);
-char				*ft_litoa(long int nb);
-char				*ft_llitoa(long long int nb);
 long double			ft_ldouble_power(long double n, int pow);
 void				ft_tabdel(char **tab);
 t_file				*ft_fopen(const char *path);
-int					ft_fclose(t_file *stream);
+int					ft_fclose(t_file **stream);
 int					ft_fgetc(t_file *stream);
 
 #endif

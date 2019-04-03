@@ -6,18 +6,22 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/23 15:14:07 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 15:22:56 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:20:23 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_fclose(t_file *stream)
+/*
+** Closes the file descriptor and frees the buffer contained in the stream.
+*/
+int		ft_fclose(t_file **stream)
 {
-	if (!stream)
+	if (!stream || !*stream)
 		return (0);
-	if (close(stream->fd) == -1)
+	if (close((*stream)->fd) == -1)
 		return (-1);
-	free(stream->buf);
+	free(*stream);
+	stream = NULL;
 	return (0);
 }

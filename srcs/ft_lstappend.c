@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_lstappend.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/12 17:11:28 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:49:22 by anleclab         ###   ########.fr       */
+/*   Created: 2019/04/03 22:09:10 by anleclab          #+#    #+#             */
+/*   Updated: 2019/04/03 22:12:17 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Deletes the chained list.
+** Adds the given link at the end of the chained list.
 */
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+void	ft_lstappend(t_list **lst, t_list *link)
 {
-	t_list	*cache;
+	t_list *cache;
 
-	if (!*alst)
+	if (!lst)
 		return ;
-	while ((*alst)->next)
+	if (!*lst)
+		*lst = link;
+	else
 	{
-		cache = (*alst)->next;
-		ft_lstdelone(alst, del);
-		*alst = cache;
+		cache = *lst;
+		while (cache->next)
+			cache = cache->next;
+		cache->next = link;
 	}
-	ft_lstdelone(alst, del);
 }

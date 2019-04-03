@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2019/04/03 20:29:51 by anleclab         ###   ########.fr        #
+#    Updated: 2019/04/03 22:13:46 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRC_NAMES = ft_memset.c \
 	  ft_strncmp.c \
 	  ft_atoi.c \
 	  ft_isalpha.c \
+	  ft_iswhitespace.c \
 	  ft_isdigit.c \
 	  ft_isalnum.c \
 	  ft_isascii.c \
@@ -74,6 +75,8 @@ SRC_NAMES = ft_memset.c \
 	  ft_lstadd.c \
 	  ft_lstiter.c \
 	  ft_lstmap.c \
+	  ft_lstcpy.c \
+	  ft_lstappend.c \
 	  ft_strsplitlst.c \
 	  ft_putstrarray.c \
 	  ft_putstrlst.c \
@@ -85,8 +88,6 @@ SRC_NAMES = ft_memset.c \
 	  ft_double_power.c \
 	  ft_array_swap.c \
 	  ft_itoa_base.c \
-	  ft_litoa.c \
-	  ft_llitoa.c \
 	  ft_ldouble_power.c \
 	  ft_tabdel.c \
 	  ft_fopen.c \

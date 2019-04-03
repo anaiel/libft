@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_iswhitespace.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/12 17:11:28 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:49:22 by anleclab         ###   ########.fr       */
+/*   Created: 2019/04/03 20:41:06 by anleclab          #+#    #+#             */
+/*   Updated: 2019/04/03 20:45:28 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Deletes the chained list.
+** Returns true if c is a whitespace, otherwise false.
 */
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+int		ft_iswhitespace(int c)
 {
-	t_list	*cache;
-
-	if (!*alst)
-		return ;
-	while ((*alst)->next)
-	{
-		cache = (*alst)->next;
-		ft_lstdelone(alst, del);
-		*alst = cache;
-	}
-	ft_lstdelone(alst, del);
+	return((c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r'
+			|| c == ' '));
 }

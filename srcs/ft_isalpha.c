@@ -6,14 +6,16 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 08:44:07 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:08:50 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:23:58 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+/*
+** Returns true if the character is alphabetical, false otherwise.
+*/
 int		ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	else
-		return (0);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }

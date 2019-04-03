@@ -6,14 +6,16 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:39:26 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:08:51 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:25:10 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+/*
+** Returns true if the character is within the ASCII range.
+*/
 int		ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	else
-		return (0);
+	return ((c >= 0 && c <= 127));
 }

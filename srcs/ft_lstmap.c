@@ -6,26 +6,22 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 17:57:19 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:09:56 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 22:13:54 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static t_list	*al_lstadd(t_list *elem, t_list *lst)
-{
-	if (!elem)
-		return (lst);
-	elem->next = lst;
-	return (elem);
-}
-
+/*
+** Returns a new chained list composed of links which are copies of the links
+** in the original list to which is applied the function.
+*/
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	if (!lst)
+	t_list *map_lst;
+	
+	if (!lst || !(map_lst = ft_lstcpy(lst)))
 		return (NULL);
-	if (!lst->next)
-		return (f(lst));
-	else
-		return (al_lstadd(f(lst), ft_lstmap(lst->next, f)));
+	ft_lstiter(map_lst, f);
+	return (map_lst);
 }

@@ -6,10 +6,15 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/23 17:16:09 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:09:17 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:44:07 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+/*
+** Returns n to the power of pow where n is a long double and pow a signed int.
+*/
 long double		ft_ldouble_power(long double n, int pow)
 {
 	if (pow == 0)

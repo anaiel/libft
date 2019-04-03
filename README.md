@@ -15,6 +15,7 @@ Run the command `make` to create the **libft.a** library file.
 - ft_isalnum
 - ft_isascii
 - ft_isprint
+- ft_iswhitespace
 - ft_toupper
 - ft_tolower
 
@@ -62,13 +63,13 @@ Run the command `make` to create the **libft.a** library file.
 - ft_lstiter
 - ft_lstmap
 - ft_strsplitlst
+- ft_lstcpy
+- ft_lstappend
 
 ### Conversions
 - ft_atoi
 - ft_itoa
 - ft_itoa_base
-- ft_litoa
-- ft_llitoa
 
 ### Printing
 - ft_putchar
@@ -98,6 +99,9 @@ Run the command `make` to create the **libft.a** library file.
 ## Updating
 
 The project is updated regularly with new functions that could be useful for other projects, or when I learn something new, or when I realize my code looks aweful :wink:
+
+## How to improve
+- Update code with new and improved coding skills
 
 ## Authors
 

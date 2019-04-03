@@ -6,23 +6,26 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:10:12 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:11:07 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 22:33:38 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Writes the bits of c.
+*/
 void	ft_printbits(char c)
 {
 	unsigned char	bit;
 
-	bit = 128;
+	bit = 1 << 8;
 	while (bit)
 	{
 		if (bit & c)
-			write(1, "1", 1);
+			ft_putchar('1');
 		else
-			write(1, "0", 1);
+			ft_putchar('0');
 		bit = bit >> 1;
 	}
 }

@@ -6,22 +6,20 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 17:43:41 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:09:48 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:52:41 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Applies the function to all links of the chained list.
+*/
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	if (lst)
-	{
-		if (!lst->next)
-			f(lst);
-		else
-		{
-			ft_lstiter(lst->next, f);
-			f(lst);
-		}
-	}
+	if (!lst)
+		return ;
+	if (lst->next)
+		ft_lstiter(lst->next, f);
+	f(lst);
 }

@@ -6,32 +6,32 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 09:18:47 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:08:47 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:16:26 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Returns the number of line of the file.
+*/
 int		ft_filelinecount(int fd)
 {
 	int		nblines;
-	int		readchar;
-	char	buf[51];
+	int		rval;
+	char	buf[BUFF_SIZE + 1];
 	int		i;
 
-	buf[50] = 0;
-	readchar = read(fd, buf, 50);
-	nblines = (readchar > 0 ? 1 : 0);
-	while (readchar > 0)
+	if ((rval = read(fd, buf, BUFF_SIZE)) <= 0)
+		return (0);
+	buf[rval] = 0;
+	nblines = 1;
+	while (rval > 0)
 	{
-		i = 0;
-		while (i < 50)
-		{
-			if (buf[i] == '\n')
-				nblines++;
-			i++;
-		}
-		readchar = read(fd, buf, 50);
+		i = -1;
+		while (buf[++i])
+			nblines += (buf[i] == '\n');
+		rval = read(fd, buf, BUFF_SIZE);
 	}
 	return (nblines);
 }
