@@ -6,14 +6,16 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2019/01/23 15:33:06 by anleclab         ###   ########.fr        #
+#    Updated: 2019/04/03 20:29:51 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-FLAGS = -Wall -Werror -Wextra
-INC = -I./inc
-SRC_DIR = src
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra
+
+SRC_DIR = srcs/
 SRC_NAMES = ft_memset.c \
 	  ft_bzero.c \
 	  ft_memcpy.c \
@@ -90,32 +92,49 @@ SRC_NAMES = ft_memset.c \
 	  ft_fopen.c \
 	  ft_fclose.c \
 	  ft_fgetc.c
-SRC = $(addprefix $(SRC_DIR)/, $(SRC_NAMES))
-OBJ_DIR = obj
+SRCS = $(addprefix $(SRC_DIR), $(SRC_NAMES))
+OBJ_DIR = objs/
 OBJ_NAMES = $(SRC_NAMES:.c=.o)
-OBJ = $(addprefix $(OBJ_DIR)/, $(OBJ_NAMES))
+OBJS = $(addprefix $(OBJ_DIR), $(OBJ_NAMES))
 
-.PHONY: all, clean, fclean, re
+HDR_NAMES = libft.h
+HDR_DIR = includes/
+HDRS = $(addprefix $(HDR_DIR),$(HDR_NAMES))
 
-all: $(NAME)
+HDR_INC = $(addprefix -I./, $(HDR_DIR))
 
-$(NAME): $(OBJ_DIR) $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
-	@echo "\033[0;32mlibft.a library created successfully\033[0m"
+RED = \033[0;31m
+GREEN = \033[0;32m
+NONE = \033[0m
+
+all: project $(NAME) $(HDRS)
+	@echo "Project ready"
+
+project:
+	@echo "Checking project..."
+
+$(NAME): $(OBJ_DIR) $(OBJS) $(HDRS)
+	@ar rc $@ $(OBJS)
+	@ranlib $@
+	@echo "\t[ $(GREEN)✔$(NONE) ] libft.a library"
 
 $(OBJ_DIR):
-	@mkdir $(OBJ_DIR)
-	@echo "\033[0;33mobj directory created\033[0m"
+	@mkdir $@
+	@echo "\t[ $(GREEN)✔$(NONE) ] objs/ directory"
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	@gcc $(FLAGS) $(INC) -c $< -o $@
+
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HDRS)
+	@$(CC) $(CFLAGS) $(HDR_INC) -c $< -o $@
+	@echo "\t[ $(GREEN)✔$(NONE) ] $@ object"
 
 clean:
 	@rm -Rf $(OBJ_DIR)
-	@echo "\033[0;33mobj directory deleted\033[0m"
+	@echo "\t[ $(RED)✗$(NONE) ] $(OBJ_DIR) directory"
 
 fclean: clean
 	@rm -f $(NAME)
+	@echo "\t[ $(RED)✗$(NONE) ] $(NAME) library"
 
 re: fclean all
+
+.PHONY: all clean fclean re project
