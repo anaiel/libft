@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 17:57:19 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:04:23 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:34:27 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,12 @@
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list *map_lst;
-	
-	if (!lst || !(map_lst = ft_lstcpy(lst)))
-		return (NULL);
-	ft_lstiter(map_lst, f);
+
+	map_lst = NULL;
+	while (lst)
+	{
+		ft_lstappend(&map_lst, f(lst));
+		lst = lst->next;
+	}
 	return (map_lst);
 }

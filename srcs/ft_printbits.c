@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:10:12 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:10:04 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:36:10 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_printbits(char c)
 {
 	unsigned char	bit;
 
-	bit = 1 << 8;
+	bit = 1 << 7;
 	while (bit)
 	{
 		if (bit & c)

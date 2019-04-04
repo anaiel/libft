@@ -6,9 +6,11 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 19:29:30 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:06:13 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:24:47 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** Returns true if the value of n bits of s1 and s2 are equal, false otherwise.

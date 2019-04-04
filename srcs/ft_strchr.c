@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:03:18 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:52:56 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:25:34 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	while (*s && *s != c)
 		s++;
 	if (*s == c)
-		return (*s);
+		return ((char *)s);
 	else
 		return (NULL);
 }

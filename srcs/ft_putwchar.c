@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:12:01 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:47:22 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:35:29 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int			ft_putwchar(wchar_t c)
 {
 	if (c & UTF_4BYTES_MASK)
 		ft_putwchar_4bytes(c);
-	else if (c & UTF_3_BYTES_MASK)
+	else if (c & UTF_3BYTES_MASK)
 		ft_putwchar_3bytes(c);
 	else if (c & UTF_2BYTES_MASK)
 		ft_putwchar_2bytes(c);

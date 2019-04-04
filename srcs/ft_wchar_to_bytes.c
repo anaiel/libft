@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/10 11:31:43 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 12:23:39 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:36:45 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,11 @@ unsigned char			*ft_wchar_to_bytes(wint_t c)
 {
 	unsigned char	*res;
 
-	if (c & UTF_4_BYTES_MASK)
+	if (c & UTF_4BYTES_MASK)
 		res = ft_wchar_to_4bytes(c);
-	else if (c & UTF_3_BYTES_MASK)
+	else if (c & UTF_3BYTES_MASK)
 		res = ft_wchar_to_3bytes(c);
-	else if (c & UTF_2_BYTES_MASK)
+	else if (c & UTF_2BYTES_MASK)
 		res = ft_wchar_to_2bytes(c);
 	else
 	{

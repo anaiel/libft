@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:08:42 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 08:54:58 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:26:01 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@
 */
 int		ft_isalnum(int c)
 {
-	return((ft_isalpha(c) || ft_isdigit(c));
+	return((ft_isalpha(c) || ft_isdigit(c)));
 }

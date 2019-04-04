@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 09:06:03 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 11:54:36 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:29:23 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ static int	word_len(char const *s, char c)
 */
 char		**ft_strsplit(char const *s, char c)
 {
-	int		i;
 	int		nbwords;
 	int		count;
 	char	**res;

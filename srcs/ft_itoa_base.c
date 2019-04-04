@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/02 11:39:22 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:03:29 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:38:36 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,13 @@ static void	init_base(char *base)
 
 	i = -1;
 	while (++i < 10)
-		charbase[i] = i;
+		base[i] = i;
 	while (i < 16)
-		charbase[i++] = i - 10 + 'A';
-	charbase[16] = 0;
+	{
+		base[i] = i - 10 + 'A';
+		i++;
+	}
+	base[16] = 0;
 }
 
 /*
@@ -44,8 +47,8 @@ char		*ft_itoa_base(int n, int base)
 		return (NULL);
 	while (--nbdigits)
 	{
-		res[nbdigits] = charbase[nb % base];
-		nb /= base;
+		res[nbdigits] = charbase[unsigned_n % base];
+		unsigned_n /= base;
 	}
 	return (res);
 }

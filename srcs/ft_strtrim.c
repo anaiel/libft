@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 08:48:42 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 12:14:21 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:28:58 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,13 @@
 char	*ft_strtrim(char const *s)
 {
 	int		len;
-	int		j;
 
 	if (!s)
 		return (NULL);
 	while (*s && ft_iswhitespace(*s))
 		s++;
 	len = ft_strlen(s);
-	while (is_whitespace(s[--len]))
+	while (ft_iswhitespace(s[--len]))
 		;
-	return (ft_strsub(s, , ft_strlen(s) - len));
+	return (ft_strsub(s, 0, ft_strlen(s) - len));
 }

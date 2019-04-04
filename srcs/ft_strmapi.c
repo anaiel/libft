@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 14:03:20 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 10:14:09 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:27:56 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*res;
-	unsigned int	i;
 
 	if (!s || !f || !(res = ft_strdup(s)))
 		return (NULL);
-	ft_striteri(res, f);
+	ft_striteri(res, (void *)f);
 	return (res);
 }

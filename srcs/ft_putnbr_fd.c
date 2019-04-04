@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 14:31:49 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:24:51 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:29:41 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_putnbr_fd(int n, int fd)
 		while (pow)
 		{
 			digit = n / pow + '0';
-			ft_putchar_fd(digit);
+			ft_putchar_fd(digit, fd);
 			n = n % pow;
 			pow /= 10;
 		}

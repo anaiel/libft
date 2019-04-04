@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:55:27 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 10:13:45 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:27:07 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ char	*ft_strmap(char const *s, char (*f)(char))
 
 	if (!s || !f || !(res = ft_strdup(s)))
 		return (NULL);
-	ft_striter(res, f);
+	ft_striter(res, (void *)f);
 	return (res);
 }

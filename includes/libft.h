@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 12:17:29 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:38:38 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstcpy(t_list *lst);
-t_list				*ft_lstappend(t_list **lst, t_list *link);
+void				ft_lstappend(t_list **lst, t_list *link);
 t_list				*ft_strsplitlst(char *s, char c);
 void				ft_putstrarray(const char **str);
 void				ft_putstrlst(t_list *lst);
