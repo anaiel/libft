@@ -6,14 +6,14 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:33:56 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:15:36 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:19:22 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** Returns c or its lowercase version if it is uppercase.
+*/
 int		ft_tolower(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c - 'A' + 'a');
-	else
-		return (c);
+	return ((c >= 'A' && c <= 'Z') ? c - 'A' + 'a' : c);
 }

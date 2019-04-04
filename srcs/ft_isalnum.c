@@ -6,14 +6,14 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:08:42 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:22:53 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:54:58 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Returns true if the character is alphanumerical.
+** Returns true if the character is alphanumerical, false otherwise.
 */
 int		ft_isalnum(int c)
 {

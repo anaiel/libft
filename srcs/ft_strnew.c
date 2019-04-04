@@ -6,24 +6,22 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:22:53 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:14:38 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 10:18:51 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Returns a freshly allocated string of size characters and terminated by an
+** additional 0. All the characters are set to 0.
+*/
 char	*ft_strnew(size_t size)
 {
 	char	*res;
-	size_t	i;
 
 	if (!(res = (char *)malloc(size + 1)))
 		return (NULL);
-	i = 0;
-	while (i <= size)
-	{
-		res[i] = '\0';
-		i++;
-	}
+	ft_bzero(res, sizeof(char) * (size + 1));
 	return (res);
 }

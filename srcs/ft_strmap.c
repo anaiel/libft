@@ -6,24 +6,22 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:55:27 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:14:04 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 10:13:45 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Returns a new string which is the result of applying the function to the
+** given string.
+*/
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	char	*res;
-	int		i;
 
-	if (!s || !(res = ft_strnew(ft_strlen(s))))
+	if (!s || !f || !(res = ft_strdup(s)))
 		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		res[i] = f(s[i]);
-		i++;
-	}
+	ft_striter(res, f);
 	return (res);
 }

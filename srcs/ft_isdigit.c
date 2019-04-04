@@ -6,11 +6,9 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 09:25:20 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:26:03 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:55:17 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 ** Returns true if the character is a digit, false otherwise.

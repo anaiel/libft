@@ -6,12 +6,15 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:42:47 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 22:33:43 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:10:26 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Writes character c.
+*/
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);

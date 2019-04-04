@@ -6,24 +6,23 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:46:36 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:15:16 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:07:40 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Returns a new string which contains len characters from the original string
+** starting from index start.
+*/
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
-	size_t	i;
 
 	if (!(res = ft_strnew(len)))
 		return (NULL);
-	i = start;
-	while (s && s[i] && i - start < len)
-	{
-		res[i - start] = s[i];
-		i++;
-	}
+	s += start;
+	ft_strncpy(res, s, len);
 	return (res);
 }

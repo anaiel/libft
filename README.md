@@ -95,6 +95,8 @@ Run the command `make` to create the **libft.a** library file.
 - ft_fopen
 - ft_fclose
 - ft_fgetc
+- ft_nbdigits
+- ft_nbdigits_base
 
 ## Updating
 

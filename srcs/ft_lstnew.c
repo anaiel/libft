@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:41:50 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 22:17:59 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:04:40 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 
 	if (!(new = (t_list *)malloc(sizeof(t_list))))
 		return (NULL);
-	if (!content || content+size == 0)
+	if (!content || content_size == 0)
 	{
 		new->content = NULL;
 		new->content_size = 0;

@@ -6,16 +6,14 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 11:23:45 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:15:42 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:20:17 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
+/*
+** Returns c or its uppercase version if it is lowercase.
+*/
 int		ft_toupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 'a' + 'A');
-	else
-		return (c);
+	return ((c >= 'a' && c <= 'z') ? c - 'a' + 'A' : c);
 }

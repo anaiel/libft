@@ -6,11 +6,9 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/23 17:16:09 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:44:07 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:03:37 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 ** Returns n to the power of pow where n is a long double and pow a signed int.

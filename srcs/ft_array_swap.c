@@ -6,11 +6,9 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/02 10:35:50 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 20:37:43 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:54:13 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 ** Swaps elements at index i1 and i2 if array exists.

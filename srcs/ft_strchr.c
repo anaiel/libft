@@ -6,21 +6,22 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 17:03:18 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:13:06 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:52:56 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Returns a pointer to the first occurence of c in s, or NULL is c does not
+** occur.
+*/
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
-
-	i = 0;
-	while (s[i] && s[i] != c)
-		i++;
-	if (s[i] == c)
-		return ((char *)(s + i));
+	while (*s && *s != c)
+		s++;
+	if (*s == c)
+		return (*s);
 	else
 		return (NULL);
 }

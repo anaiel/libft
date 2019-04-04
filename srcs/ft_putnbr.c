@@ -6,26 +6,29 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 15:31:10 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:11:55 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:24:19 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Writes the given int on the standard output.
+*/
 void	ft_putnbr(int n)
 {
 	int		pow;
-	char	s[1];
+	char	digit;
 
-	if (n == -2147483648)
-		write(1, "-2147483648", 11);
+	if (n == INT_MIN)
+		ft_putstr("-2147483648");
 	else if (n == 0)
-		write(1, "0", 1);
+		ft_putchar('0');
 	else
 	{
 		if (n < 0)
 		{
-			write(1, "-", 1);
+			ft_putchar('-');
 			n *= -1;
 		}
 		pow = 1;
@@ -33,8 +36,8 @@ void	ft_putnbr(int n)
 			pow *= 10;
 		while (pow)
 		{
-			*s = n / pow + '0';
-			write(1, s, 1);
+			digit = n / pow + '0';
+			ft_putchar(digit);
 			n = n % pow;
 			pow /= 10;
 		}

@@ -6,11 +6,9 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 20:41:06 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 20:45:28 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:55:27 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 ** Returns true if c is a whitespace, otherwise false.

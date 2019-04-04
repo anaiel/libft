@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_nbdigits.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/07 13:33:20 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/04 09:54:07 by anleclab         ###   ########.fr       */
+/*   Created: 2019/04/04 08:48:16 by anleclab          #+#    #+#             */
+/*   Updated: 2019/04/04 09:09:54 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Set all the characters of a string to 0.
+** Returns the number of digits in an int.
 */
-void	ft_strclr(char *s)
+int		ft_nbdigits(int nb)
 {
-	if (!s)
-		return ;
-	while (*s)
+	int				res;
+	unsigned int	unsigned_nb;
+
+	unsigned_nb = (nb < 0) ? -nb : nb;
+	res = 1;
+	while (unsigned_nb >= 10)
 	{
-		*s = 0;
-		s++;
+		res++;
+		unsigned_nb /= 10;
 	}
+	return (res);
 }

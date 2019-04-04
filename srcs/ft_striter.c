@@ -6,19 +6,20 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 13:40:06 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:13:38 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 10:03:44 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+** Applies the function to every character of the string.
+*/
 void	ft_striter(char *s, void (*f)(char *))
 {
-	int		i;
-
-	i = 0;
-	if (s && f)
-		while (s[i])
-		{
-			f(s + i);
-			i++;
-		}
+	if (!s || !f)
+		return ;
+	while (*s)
+	{
+		f(s);
+		s++;
+	}
 }

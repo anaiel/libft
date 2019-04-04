@@ -6,12 +6,15 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:27:57 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:14:16 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 10:14:47 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Copies n characters of s2 at the end of s1.
+*/
 char	*ft_strncat(char *s1, char *s2, size_t n)
 {
 	size_t	i;

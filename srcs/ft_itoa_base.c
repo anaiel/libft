@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/02 11:39:22 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:43:09 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:03:29 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,9 @@ static void	init_base(char *base)
 	i = -1;
 	while (++i < 10)
 		charbase[i] = i;
-	while (i < base)
+	while (i < 16)
 		charbase[i++] = i - 10 + 'A';
-}
-
-static int	nb_digits(unsigned int nb, int base)
-{
-	int		nbdigits;
-
-	nbdigits = 0;
-	if (nb == 0)
-		return (1);
-	while (nb)
-	{
-		nbdigits++;
-		nb /= base;
-	}
-	return (nbdigits);
+	charbase[16] = 0;
 }
 
 /*
@@ -53,7 +39,7 @@ char		*ft_itoa_base(int n, int base)
 		return (NULL);
 	init_base(charbase);
 	unsigned_n = (n < 0) ? -n : n;
-	nbdigits = nb_digits(unsigned_n, base);
+	nbdigits = ft_nbdigits_base(unsigned_n, base);
 	if (!(res = ft_strnew(nbdigits)))
 		return (NULL);
 	while (--nbdigits)

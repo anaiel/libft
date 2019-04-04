@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/19 16:12:01 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:12:54 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:47:22 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,18 @@ static void	ft_putwchar_2bytes(wchar_t c)
 	write(1, &byte, 1);
 }
 
+/*
+** Writes a wide char on the standard ouput.
+*/
 int			ft_putwchar(wchar_t c)
 {
-	if (c & 2031616)
+	if (c & UTF_4BYTES_MASK)
 		ft_putwchar_4bytes(c);
-	else if (c & 63488)
+	else if (c & UTF_3_BYTES_MASK)
 		ft_putwchar_3bytes(c);
-	else if (c & 1920)
+	else if (c & UTF_2BYTES_MASK)
 		ft_putwchar_2bytes(c);
 	else
-		write(1, &c, 1);
+		ft_putchar(c);
 	return (1);
 }

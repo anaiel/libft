@@ -6,12 +6,15 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 19:00:11 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 22:30:42 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 09:08:09 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** Copies len bits of src to dst. Protected against overlapping.
+*/
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	int		i;

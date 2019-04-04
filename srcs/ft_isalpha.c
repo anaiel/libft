@@ -6,11 +6,9 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 08:44:07 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:23:58 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:55:05 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 ** Returns true if the character is alphabetical, false otherwise.

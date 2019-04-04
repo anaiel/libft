@@ -6,7 +6,7 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 13:51:13 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 20:54:03 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:54:18 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int			ft_atoi(const char *s)
 	sign = 1;
 	while (*s && ft_iswhitespace(*s))
 		s++;
-	if (*s == '+' || *s == '-')
+	if (*s == '+')
 		s++;
 	else if (*s == '-')
 	{

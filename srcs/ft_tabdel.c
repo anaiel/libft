@@ -6,19 +6,27 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/04 11:17:44 by anleclab          #+#    #+#             */
-/*   Updated: 2019/01/23 14:15:34 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:17:00 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_tabdel(char **tab)
+/*
+** Frees the strings of a NULL terminated array of strings and frees the array.
+*/
+void	ft_tabdel(char ***tab)
 {
-	int		i;
+	char **		cache;
 
-	i = -1;
-	while (tab[++i])
-		free(tab[i]);
-	free(tab);
-	tab = NULL;
+	if (!tab)
+		return ;
+	cache = *tab;
+	while (*cache)
+	{
+		free(*cache);
+		cache++;
+	}
+	free(*tab);
+	*tab = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 17:19:32 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 22:13:21 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 12:17:29 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,10 @@
 
 # define LLONG_MAX 9223372036854775807
 # define INT_MIN -2147483647
+
+# define UTF_4BYTES_MASK 2031616
+# define UTF_3BYTES_MASK 63488
+# define UTF_2BYTES_MASK 1920
 
 typedef struct		s_list
 {
@@ -112,9 +116,11 @@ double				ft_double_power(double n, int pow);
 void				ft_array_swap(int *array, int i1, int i2);
 char				*ft_itoa_base(int n, int base);
 long double			ft_ldouble_power(long double n, int pow);
-void				ft_tabdel(char **tab);
+void				ft_tabdel(char ***tab);
 t_file				*ft_fopen(const char *path);
 int					ft_fclose(t_file **stream);
 int					ft_fgetc(t_file *stream);
+int					ft_nbdigits(int nb);
+int					ft_nbdigits_base(unsigned int nb, int base);
 
 #endif

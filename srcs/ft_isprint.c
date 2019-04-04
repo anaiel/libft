@@ -6,11 +6,9 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:13 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:27:02 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:55:21 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 /*
 ** Returns true if the character is printable, false otherwise.

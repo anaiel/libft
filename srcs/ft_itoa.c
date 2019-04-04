@@ -6,26 +6,15 @@
 /*   By: anleclab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 14:22:39 by anleclab          #+#    #+#             */
-/*   Updated: 2019/04/03 21:34:43 by anleclab         ###   ########.fr       */
+/*   Updated: 2019/04/04 08:57:10 by anleclab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	nbdigit(int n)
-{
-	int				res;
-
-	res = 1;
-	n = (n < 0) ? -n : n;
-	while (n >= 10)
-	{
-		res++;
-		n /= 10;
-	}
-	return (res);
-}
-
+/*
+** Returns the string of digits representing the given int.
+*/
 char		*ft_itoa(int n)
 {
 	char	*res;
@@ -36,7 +25,7 @@ char		*ft_itoa(int n)
 		res = ft_strdup("-2147483648");
 		return (res);
 	}
-	len = (n < 0 ? nbdigit(n) + 1 : nbdigit(n));
+	len = (n < 0 ? ft_nbdigits(n) + 1 : ft_nbdigits(n));
 	n = (n < 0 ? -n : n);
 	if (!(res = ft_strnew(len)))
 		return (NULL);
