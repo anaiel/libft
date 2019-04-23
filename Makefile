@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2019/04/04 09:01:10 by anleclab         ###   ########.fr        #
+#    Updated: 2019/04/23 13:23:09 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,33 +110,27 @@ RED = \033[0;31m
 GREEN = \033[0;32m
 NONE = \033[0m
 
-all: project $(NAME) $(HDRS)
+all: $(NAME) $(HDRS)
 	@echo "Project ready"
-
-project:
-	@echo "Checking project..."
 
 $(NAME): $(OBJ_DIR) $(OBJS) $(HDRS)
 	@ar rc $@ $(OBJS)
 	@ranlib $@
-	@echo "\t[ $(GREEN)✔$(NONE) ] libft.a library"
+	@echo "\t[ $(GREEN)✔$(NONE) ] libft/libft.a library"
 
 $(OBJ_DIR):
 	@mkdir $@
-	@echo "\t[ $(GREEN)✔$(NONE) ] objs/ directory"
-
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(HDRS)
 	@$(CC) $(CFLAGS) $(HDR_INC) -c $< -o $@
-	@echo "\t[ $(GREEN)✔$(NONE) ] $@ object"
 
 clean:
 	@rm -Rf $(OBJ_DIR)
-	@echo "\t[ $(RED)✗$(NONE) ] $(OBJ_DIR) directory"
+	@echo "\t[ $(RED)✗$(NONE) ] libft/$(OBJ_DIR) directory"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "\t[ $(RED)✗$(NONE) ] $(NAME) library"
+	@echo "\t[ $(RED)✗$(NONE) ] libft/$(NAME) library"
 
 re: fclean all
 
