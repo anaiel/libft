@@ -108,7 +108,7 @@ Run the command `make` to create the **libft.a** library file.
 
 ## Updating
 
-The project is updated regularly with new functions that could be useful for other projects, or when I learn something new, or when I realize my code looks aweful :wink:
+The project is updated regularly with new functions that could be useful for other projects, or when I learn something new, or when I realize my code looks awful :wink:
 
 ## Authors
 
