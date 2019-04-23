@@ -6,7 +6,7 @@
 #    By: anaiel <anaiel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/06 17:19:55 by anleclab          #+#    #+#              #
-#    Updated: 2019/04/23 13:23:09 by anleclab         ###   ########.fr        #
+#    Updated: 2019/04/23 13:24:47 by anleclab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -111,7 +111,6 @@ GREEN = \033[0;32m
 NONE = \033[0m
 
 all: $(NAME) $(HDRS)
-	@echo "Project ready"
 
 $(NAME): $(OBJ_DIR) $(OBJS) $(HDRS)
 	@ar rc $@ $(OBJS)
