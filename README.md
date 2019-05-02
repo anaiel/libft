@@ -1,7 +1,5 @@
 # LIBFT
 
-![grade](https://i.imgur.com/FW5Sd6I.png "125 / 100")
-
 This project was completed in november 2018 as part of the 42 school cursus. The goal was to create a library containing a number of functions already existing in C libraries as well as additional ones, to be used in future projects.
 The detailed instructions can be found in the **instructions/Subject.pdf** file.
 
@@ -15,7 +13,7 @@ Run the command `make` to create the **libft.a** library file.
 
 ## Available functions
 
-### Character recon and treatment
+### :mag: Character recon and transformation
 - `ft_isalpha`
 - `ft_isdigit`
 - `ft_isalnum`
@@ -25,7 +23,7 @@ Run the command `make` to create the **libft.a** library file.
 - `ft_toupper`
 - `ft_tolower`
 
-### String manipulations
+### :fountain_pen: String manipulations
 - `ft_strlen`
 - `ft_strnew`
 - `ft_strdel`
@@ -50,7 +48,7 @@ Run the command `make` to create the **libft.a** library file.
 - `ft_strtrim`
 - `ft_strsplit`
 
-### Memory manipulation
+### :floppy_disk: Memory manipulation
 - `ft_memset`
 - `ft_bzero`
 - `ft_memcpy`
@@ -61,7 +59,7 @@ Run the command `make` to create the **libft.a** library file.
 - `ft_memalloc`
 - `ft_memdel`
 
-### Chained lists manipulation (BONUS)
+### :chains: Chained lists manipulation (BONUS)
 - `ft_lstnew`
 - `ft_lstdelone`
 - `ft_lstdel`
@@ -72,12 +70,12 @@ Run the command `make` to create the **libft.a** library file.
 - `ft_lstcpy`
 - `ft_lstappend`
 
-### Conversions
+### :money_with_wings: Conversions
 - `ft_atoi`
 - `ft_itoa`
 - `ft_itoa_base` (BONUS)
 
-### Printing
+### :scroll: Printing
 - `ft_putchar`
 - `ft_putchar_fd`
 - `ft_putstr`
@@ -91,12 +89,12 @@ Run the command `make` to create the **libft.a** library file.
 - `ft_printbits` (BONUS)
 - `ft_putwchar` (BONUS)
 
-### Stream reading (BONUS)
+### :rowing_woman: Stream reading (BONUS)
 - `ft_fopen`
 - `ft_fclose`
 - `ft_fgetc`
 
-### Misc (BONUS)
+### :tornado: Misc (BONUS)
 - `ft_filelinecount`
 - `ft_double_power`
 - `ft_ldouble_power`
@@ -113,3 +111,5 @@ The project is updated regularly with new functions that could be useful for oth
 ## Authors
 
 * **Anaelle Leclabart** - [anaiel](https://github.com/anaiel)
+
+![grade](https://i.imgur.com/FW5Sd6I.png "125 / 100")
