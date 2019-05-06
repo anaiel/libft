@@ -110,6 +110,6 @@ The project is updated regularly with new functions that could be useful for oth
 
 ## Authors
 
-* **Anaelle Leclabart** - [anaiel](https://github.com/anaiel)
+* **[anaiel](https://github.com/anaiel)**
 
-![grade](https://i.imgur.com/FW5Sd6I.png "125 / 100")
+<img align="right" src="https://i.imgur.com/FW5Sd6I.png" />
