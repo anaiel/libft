@@ -18,7 +18,7 @@ libft:
 ```
 As well as the following flags to the compilation of the sources of the project :
 ```
--I./libft/includes/libft.h -L./libft -lft
+-I./libft/includes/ -L./libft -lft
 ```
 
 ## Available functions
