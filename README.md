@@ -1,7 +1,7 @@
 # LIBFT
 
 This project was completed in november 2018 as part of the 42 school cursus. The goal was to create a library containing a number of functions already existing in C libraries as well as additional ones, to be used in future projects.
-The detailed instructions can be found in the **instructions/Subject.pdf** file.
+The detailed instructions can be found in the *resources* folder.
 
 ![path to libft](https://i.imgur.com/osfWGCy.png "Cursus start > 42 Commandements > Piscine Reloaded > Libft")
 
